@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <launch>
-  <node pkg="cartographer_ros" type="cartographer_dev_output_pbstream_trajectories" name="cartographer_dev_output_pbstream_trajectories" output="screen" args="--pbstream_file /home/yd/f1.bag.pbstream --pcd_file /home/yd/biaoding.pcd --output_file /home/yd/trajectory.txt
+  <node pkg="cartographer_ros" type="cartographer_dev_output_pbstream_trajectories" name="cartographer_dev_output_pbstream_trajectories" output="screen" args="--pbstream_file /home/derek/f1_biaoding.bag.pbstream --pcd_file /home/derek/biaoding.pcd --output_file /home/derek/trajectory.txt
 " />
 </launch>
