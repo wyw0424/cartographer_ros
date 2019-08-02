@@ -79,13 +79,13 @@
   <joint name="laser_left_joint" type="fixed">
     <parent link="velodyne" />
     <child link="laser_left" />
-    <origin xyz="0.15 0.14 0.01" rpy="1.2024826  -0.39149955  2.20542129" />
+    <origin xyz="0.15 0.09 -0.05" rpy="-0.94156  -0.950657  -3.1303" />
   </joint>
   
   <joint name="laser_right_joint" type="fixed">
     <parent link="velodyne" />
     <child link="laser_right" />
-    <origin xyz="0.15 -0.8 0.01" rpy="-1.190795   -0.44884566 -2.31588007" />
+    <origin xyz="0.15 -0.09 -0.05" rpy="0.94156   -0.950657 3.1303" />
   </joint>
   
 </robot>
