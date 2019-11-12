@@ -12,11 +12,11 @@
 -- See the License for the specific language governing permissions and
 -- limitations under the License.
 
-include "m6_backpack_test.lua"
+include "yida_2d.lua"
 
 TRAJECTORY_BUILDER.pure_localization_trimmer = {
-  max_submaps_to_keep = 10,
+  max_submaps_to_keep = 5,
 }
-POSE_GRAPH.optimize_every_n_nodes = 2
+POSE_GRAPH.optimize_every_n_nodes = 10
 
 return options

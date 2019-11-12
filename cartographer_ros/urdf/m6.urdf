@@ -35,25 +35,6 @@
     </visual>
   </link>
 
-  <link name="laser_left">
-    <visual>
-      <origin xyz="0.0 0.0 0.0" />
-      <geometry>
-        <box size="0.06 0.04 0.02" />
-      </geometry>
-      <material name="orange" />
-    </visual>
-  </link>
-
-  <link name="laser_right">
-    <visual>
-      <origin xyz="0.0 0.0 0.0" />
-      <geometry>
-        <box size="0.06 0.04 0.02" />
-      </geometry>
-      <material name="orange" />
-    </visual>
-  </link>
   
   <link name="velodyne">
     <visual>
@@ -68,22 +49,8 @@
   <joint name="imu_link_joint" type="fixed">
     <parent link="base_link" />
     <child link="imu_link" />
-    <origin xyz="0 0 0" rpy="3.141592653 0.0 0.0" />
+    <origin xyz="0 0 0" rpy="0.0 0.0 0.0" />
   </joint>
-  
-  <joint name="laser_left_link_joint" type="fixed">
-    <parent link="base_link" />
-    <child link="laser_left" />
-    <origin xyz="0.22 0.14 -0.14" rpy="1.08043 -0.53275 2.21954" />
-  </joint>
-
-
-  <joint name="laser_right_link_joint" type="fixed">
-    <parent link="base_link" />
-    <child link="laser_right" />
-    <origin xyz="0.21 -0.16 -0.14" rpy="2.00967 -2.66644 0.817334" />
-  </joint>
-  
   
   <joint name="horizontal_laser_link_joint" type="fixed">
     <parent link="base_link" />

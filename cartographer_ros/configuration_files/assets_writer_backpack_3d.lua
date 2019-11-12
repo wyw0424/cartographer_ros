@@ -47,21 +47,29 @@ options = {
       filename = "xray_xz_all",
       transform = XZ_TRANSFORM,
     },
+    {
+      action = "write_ply",
+      filename = "points.ply",
+    },
 
     -- Now we recolor our points by frame and write another batch of X-Rays. It
     -- is visible in them what was seen by the horizontal and the vertical
     -- laser.
     {
       action = "color_points",
-      frame_id = "horizontal_vlp16_link",
+      frame_id = "velodyne",
       color = { 255., 0., 0. },
     },
     {
       action = "color_points",
-      frame_id = "vertical_vlp16_link",
+      frame_id = "laser_left",
       color = { 0., 255., 0. },
     },
-
+    {
+      action = "color_points",
+      frame_id = "laser_right",
+      color = { 0., 255., 0. },
+    },
     {
       action = "write_xray_image",
       voxel_size = VOXEL_SIZE,

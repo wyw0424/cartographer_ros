@@ -17,15 +17,15 @@
 <launch>
   <arg name="bag_filenames"/>
   <arg name="no_rviz" default="false"/>
-  <arg name="rviz_config" default="$(find cartographer_ros)/configuration_files/demo_3d.rviz"/>
+  <arg name="rviz_config" default="$(find cartographer_ros)/configuration_files/demo_2d.rviz"/>
   <arg name="configuration_directory" default="$(find cartographer_ros)/configuration_files"/>
-  <arg name="configuration_basenames" default="m6_odom.lua"/>
-  <arg name="urdf_filenames" default="$(find cartographer_ros)/urdf/m6_odom.urdf"/>
+  <arg name="configuration_basenames" default="yida_2d.lua"/>
+  <arg name="urdf_filenames" default="$(find cartographer_ros)/urdf/yida_2d.urdf"/>
   <arg name="launch_prefix" default=""/>
 
-    <remap from="points2" to="/velodyne_points" />
-    <remap from="imu" to="/imu/data" />
-    <remap from="odom" to="/camera/odom/sample" />
+  <remap from="points2" to="velodyne_points" />
+  <remap from="imu" to="/imu/data" />
+  
   <include file="$(find cartographer_ros)/launch/offline_node.launch">
     <arg name="bag_filenames" value="$(arg bag_filenames)"/>
     <arg name="no_rviz" value="$(arg no_rviz)"/>

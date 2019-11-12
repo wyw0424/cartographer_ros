@@ -15,8 +15,9 @@
 -->
 
 <launch>
+  <param name="use_sim_time" value="true"/>
   <param name="robot_description"
-    textfile="$(find cartographer_ros)/urdf/m6_cky.urdf" />
+    textfile="$(find cartographer_ros)/urdf/m6_yd.urdf" />
     
   <node name="robot_state_publisher" pkg="robot_state_publisher"
     type="robot_state_publisher" />

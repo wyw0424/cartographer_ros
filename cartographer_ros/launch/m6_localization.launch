@@ -24,7 +24,8 @@
   <node name="cartographer_node" pkg="cartographer_ros"
       type="cartographer_node" args="
           -configuration_directory $(find cartographer_ros)/configuration_files
-          -configuration_basename m6_indoor.lua"
+          -configuration_basename m6_localization.lua
+          -load_state_filename $(arg load_state_filename)"
       output="screen">
     <remap from="points2" to="/velodyne_points" />
     <remap from="imu" to="/imu/data" />

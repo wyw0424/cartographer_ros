@@ -16,8 +16,8 @@
   <arg name="no_rviz" default="false"/>
   <arg name="rviz_config" default="$(find cartographer_ros)/configuration_files/demo_3d.rviz"/>
   <arg name="configuration_directory" default="$(find cartographer_ros)/configuration_files"/>
-  <arg name="configuration_basenames" default="m6_backpack_test.lua"/>
-  <arg name="urdf_filenames" default="$(find cartographer_ros)/urdf/m6_cky.urdf"/>
+  <arg name="configuration_basenames" default="m6_gps.lua"/>
+  <arg name="urdf_filenames" default="$(find cartographer_ros)/urdf/m6_yanqing.urdf"/>
   <arg name="launch_prefix" default=""/>
 
   <remap from="points2" to="velodyne_points" />

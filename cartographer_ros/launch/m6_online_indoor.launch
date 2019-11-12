@@ -16,7 +16,7 @@
 
 <launch>
   <param name="robot_description"
-    textfile="$(find cartographer_ros)/urdf/m6_cky.urdf" />
+    textfile="$(find cartographer_ros)/urdf/m6_yd.urdf" />
     
   <node name="robot_state_publisher" pkg="robot_state_publisher"
     type="robot_state_publisher" />
@@ -27,7 +27,7 @@
           -configuration_basename m6_indoor.lua"
       output="screen">
     <remap from="points2" to="/velodyne_points" />
-    <remap from="imu" to="/imu/data" />
+    <remap from="imu" to="/imu/filtered" />
   </node>
 
   <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
